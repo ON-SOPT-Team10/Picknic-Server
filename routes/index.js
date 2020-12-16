@@ -3,11 +3,11 @@ var router = express.Router();
 
 router.get('/', function (req, res, next) {
     res.render('index', {
-        title: 'Express'
+        title: 'Welcome to picknic-server!'
     });
 });
 router.use('/profile', require('./profile'));
 router.use('/main', require('./main'));
-//router.use('/bookmark', require('./bookmark'));
+router.use('/bookmark', require('./bookmark'));
 
 module.exports = router;
