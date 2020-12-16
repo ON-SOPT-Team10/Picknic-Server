@@ -14,7 +14,10 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 db.Profile = require('./profile')(sequelize, Sequelize);
 db.Story = require('./story')(sequelize, Sequelize);
-//db.Feed = require('./feed')(sequelize, Sequelize);
+db.Feed = require('./feed')(sequelize, Sequelize);
+db.Tag = require('./tag')(sequelize, Sequelize);
+
+db.Tag.belongsTo(db.Feed); // 한 피드는 한 개의 태그를 가짐.
 
 
 module.exports = db;

@@ -24,4 +24,12 @@ router.get('/story',async (req, res) => {
     }
 });
 
+router.get('/feed', async(req,res) => {
+    try{
+        
+    } catch(err){
+
+    }
+})
+
 module.exports = router;
