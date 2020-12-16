@@ -17,7 +17,7 @@ db.Story = require('./story')(sequelize, Sequelize);
 db.Feed = require('./feed')(sequelize, Sequelize);
 db.Tag = require('./tag')(sequelize, Sequelize);
 
-db.Tag.belongsTo(db.Feed); // 한 피드는 한 개의 태그를 가짐.
+db.Tag.hasMany(db.Feed); // 한 태그는 여러 개의 피드를 가짐
 
 
 module.exports = db;
