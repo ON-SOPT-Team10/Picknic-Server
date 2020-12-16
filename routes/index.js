@@ -8,6 +8,6 @@ router.get('/', function (req, res, next) {
 });
 router.use('/profile', require('./profile'));
 router.use('/main', require('./main'));
-//router.use('/bookmark', require('./bookmark'));
+router.use('/bookmark', require('./bookmark'));
 
 module.exports = router;
