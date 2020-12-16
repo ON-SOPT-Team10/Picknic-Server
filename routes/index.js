@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/', function (req, res, next) {
     res.render('index', {
-        title: 'Express'
+        title: 'Welcome to picknic-server!'
     });
 });
 router.use('/profile', require('./profile'));

@@ -4,7 +4,6 @@ const ut = require('../../modules/util');
 const rm = require('../../modules/responseMessage');
 const sc = require('../../modules/statusCode');
 const {Profile}= require('../../models');
-const myInfo= require('../../models');
 const upload = require('../../modules/multer');
 
 router.post('/', upload.single('image'), async (req, res) => {
