@@ -24,7 +24,7 @@ db.Tag.hasMany(db.Feed); // 한 태그는 여러 개의 피드를 가짐
 <br>
 
 ## **📙 DB ERD**
-
+<img width="50%" alt="스크린샷 2020-12-17 오전 4 01 20" src="https://user-images.githubusercontent.com/29622782/102395643-c5ffbc00-401e-11eb-9707-721974bb098c.png">
 
 <br>
 
